@@ -1,0 +1,88 @@
+{
+  "dataset_info": {
+    "rows": 40034,
+    "features": 17,
+    "churn_rate": 25.79
+  },
+  "chi2_tests": {
+    "Gender": {
+      "chi2": 0.31,
+      "p_value": 0.577,
+      "significant": "False"
+    },
+    "Location": {
+      "chi2": 2.64,
+      "p_value": 0.4506,
+      "significant": "False"
+    },
+    "GameGenre": {
+      "chi2": 4.46,
+      "p_value": 0.3469,
+      "significant": "False"
+    },
+    "GameDifficulty": {
+      "chi2": 1.93,
+      "p_value": 0.3809,
+      "significant": "False"
+    }
+  },
+  "best_params": {
+    "learning_rate": 0.1,
+    "max_depth": 7,
+    "n_estimators": 300,
+    "subsample": 0.8
+  },
+  "model_results": {
+    "Logistic Regression": {
+      "accuracy": 0.847,
+      "f1": 0.7501,
+      "auc": 0.9238,
+      "mcc": 0.6605
+    },
+    "Random Forest": {
+      "accuracy": 0.9371,
+      "f1": 0.8801,
+      "auc": 0.9385,
+      "mcc": 0.8377
+    },
+    "XGBoost": {
+      "accuracy": 0.946,
+      "f1": 0.8957,
+      "auc": 0.939,
+      "mcc": 0.8593
+    },
+    "XGBoost (Tuned)": {
+      "accuracy": 0.9523,
+      "f1": 0.9064,
+      "auc": 0.9395,
+      "mcc": 0.8745
+    }
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.9641068447412354,
+      "recall": 0.9718949848535846,
+      "f1-score": 0.9679852497485752,
+      "support": 5942.0
+    },
+    "1": {
+      "precision": 0.917203767972236,
+      "recall": 0.8958837772397095,
+      "f1-score": 0.9064184223419892,
+      "support": 2065.0
+    },
+    "accuracy": 0.9522917447233671,
+    "macro avg": {
+      "precision": 0.9406553063567358,
+      "recall": 0.9338893810466471,
+      "f1-score": 0.9372018360452823,
+      "support": 8007.0
+    },
+    "weighted avg": {
+      "precision": 0.9520105722886335,
+      "recall": 0.9522917447233671,
+      "f1-score": 0.9521072057127815,
+      "support": 8007.0
+    }
+  }
+}
